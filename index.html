@@ -22,10 +22,13 @@
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
+    <link href="css/resume.css" rel="stylesheet">
 
   </head>
-
+  
   <body id="page-top">
+
+
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -60,17 +63,24 @@
         </ul>
       </div>
     </nav>
-
     <div class="container-fluid p-0">
 
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
+      <!-- IMAGE -->
+      <div id="float" class="header-overlay imageOne image">
+        <img src="img/laptop_resized.png" width="1200" height="825">
+      </div>
+
+      <!-- HEADER -->
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about opaque-shift">
+        <div class="my-auto" id="opaque-shift">
+
+          <!-- <img src="img/laptop_long.png"> -->
           <h1 class="mb-0">Vivek
             <span class="text-primary">Kanpa</span>
           </h1>
-          <div class="subheading mb-5">AI @ UCD · Aspiring Machine Learning Scientist
+          <div class="subheading mb-5 white-text">AI @ UCD · Aspiring Machine Learning Scientist
           </div>
-          <p class="mb-5"> Hey, I'm Vivek! | I'm a tech geek and data nerd focused on designing robust software systems and 
+          <p class="mb-5 white-text"> Hey, I'm Vivek! | I'm a tech geek and data nerd focused on designing robust software systems and 
             transparent models to resolve challenges in big data. I'm a scientist, a runner, and a student.</p>
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
@@ -109,13 +119,30 @@
         </div>
       </section>
 
+      <!-- EXPERIENCE -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
           <h2 class="mb-5">Experience</h2>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Software Engineering Intern</h3>
+            <div class="resume-content mr-auto fade">
+              <h3 class="mb-0">Graduate Research Assistant</h3>
+              <div class="subheading mb-3">AI_PREMie, University College Dublin</div>
+              <p>
+                <i>How can we combine clinical informatics and platelet biomarker data to predict preeclampsia?</i>
+              </p>
+              <p>
+                Project description in progress! In the meanwhile, check out our lab team <a href="https://aipremie.ie/">here.</a>
+              </p>
+            </div>
+            <div class="resume-date text-md-right fade">
+              <span class="text-primary">January 2023 — June 2023</span>
+            </div>
+          </div>
+          
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto fade">
+              <h3 class="mb-0">Data Science Student Researcher</h3>
               <div class="subheading mb-3">Revolution Medicines, Bioinformatics Core Team</div>
               <p>
                 <i>How can we reuse our chemical inhibitors to target new cancerous proteins?</i>
@@ -127,14 +154,14 @@
                 (Read more about the computational approach here.)
               </p>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">January 2023 - Present</span>
+            <div class="resume-date text-md-right fade">
+              <span class="text-primary">January 2023 — June 2023</span>
             </div>
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Computational Biology Co-op</h3>
+            <div class="resume-content mr-auto fade">
+              <h3 class="mb-0">Bioinformatics & Cancer Technology Co-op</h3>
               <div class="subheading mb-3">Revolution Medicines, Cancer Targets & Technology</div>
               <p>
                 Automation and machine learning scientist in Redwood City, CA. Three of my major projects included:
@@ -146,15 +173,15 @@
                 </ul>
               </p>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">July 2022 - December 2022</span>
+            <div class="resume-date text-md-right fade">
+              <span class="text-primary">July 2022 — December 2022</span>
             </div>
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Software Engineering Co-op</h3>
-              <div class="subheading mb-3">Takeda, Bioanalytics & Automation Sciences</div>
+            <div class="resume-content mr-auto fade">
+              <h3 class="mb-0">Bioanalytics & Automation Sciences Co-op</h3>
+              <div class="subheading mb-3">Takeda, Global Biologics</div>
               <p>
                 Full stack web developer for Global Biologics in Cambridge, MA. Two of my major projects included:
                 <ul>
@@ -163,7 +190,7 @@
                 </ul>
               </p>
             </div>
-            <div class="resume-date text-md-right">
+            <div class="resume-date text-md-right fade">
               <span class="text-primary">July 2021 - December 2021</span>
             </div>
           </div>
@@ -171,19 +198,22 @@
         </div>
 
       </section>
-
+      
+      <!-- EDUCATION -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
         <div class="my-auto">
           <h2 class="mb-5">Education</h2>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-item d-flex flex-column flex-md-row mb-5 fade">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">University College Dublin</h3>
               <div class="subheading mb-2">George J. Mitchell Scholar,
                 <span class="text-primary"> Class of 2024 </span> 
               </div>
-              <div style="line-height: 1.8;">MSc, Artificial Intelligence in Medicine</div>
-              <div><u>Key Experiences:</u></div>
+              <div style="line-height: 1; font-family: Saira Extra Condensed, serif; font-size: 21px; color:darkcyan;">
+                MSc, Artificial Intelligence in Medicine
+              </div>
+              <div style="line-height: 20px; color: white;">,</div>
               <div>
                 <ul>
                   <li>One of twelve <span style="color:#BD5D38">Mitchell Scholarship</span> awardees across the United States; 
@@ -205,14 +235,16 @@
             </div>
           </div>
 
-          <div class="resume-item d-flex flex-column flex-md-row">
+          <div class="resume-item d-flex flex-column flex-md-row fade">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Northeastern University</h3>
               <div class="subheading mb-2">Undergraduate Research Scholar,
                 <span class="text-primary"> Class of 2023 </span> 
               </div>
-              <div style="line-height: 1.8;">BS, Data Science & Biology (Mathematics minor)</div>
-              <div><u>Key Experiences:</u></div>
+              <div style="line-height: 1; font-family: Saira Extra Condensed, serif; font-size: 21px; color:darkcyan;">
+                BS, Data Science & Biology (Math minor)
+              </div>
+              <div style="line-height: 20px; color: white;">,</div>
               <div>
                 <ul>
                   <li><span style="color:#BD5D38">Awarded $10,000 in grant funding</span> from three internal Northeastern PEAK Awards to
@@ -234,16 +266,16 @@
               <span class="text-primary">GPA: 3.60</span>
             </div>
           </div>
-
         </div>
       </section>
 
+      <!-- SKILLS -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
+          <h2 class="mb-5">Skills - Under Renovation!</h2>
 
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline list-icons">
+          <div class="subheading mb-3 fade">Programming Languages &amp; Tools</div>
+          <ul class="list-inline list-icons fade">
             <li class="list-inline-item">
               <img src="img/python.png"
               width="60"
@@ -296,8 +328,8 @@
             </li>
           </ul>
 
-          <div class="subheading mb-3">Techniques</div>
-          <ul class="fa-ul mb-0">
+          <div class="subheading mb-3 fade">Techniques</div>
+          <ul class="fa-ul mb-0 fade">
             <li>
               <i class="fa-li fa fa-check"></i>
               Machine Learning Algorithms</li>
@@ -323,9 +355,10 @@
         </div>
       </section>
 
+      <!-- INTERESTS -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-        <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
+        <div class="my-auto fade">
+          <h2 class="mb-5">Interests - Under Renovation!</h2>
           <p>Apart from being a software developer, I love to stay active and stay learning. I enjoy playing basketball, tennis, pickleball, 
             and frisbee. I enjoy reading non-fiction and memoirs; I'm reading <i>The Almanack of Naval Ravikant</i> and <i>The Emperor of 
               All Maladies</i> and stay up to date with <i>Nature</i> and <i>The Science Times</i> as best I can.
@@ -336,9 +369,10 @@
         </div>
       </section>
 
+      <!-- PROJECTS -->
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
         <div class="my-auto">
-          <h2 class="mb-5">Projects</h2>
+          <h2 class="mb-5">Projects - Under Renovation!</h2>
           <ul class="fa-ul mb-0">
             <li>
               <a href="blog.html">Visit My Blog!</a>
@@ -367,6 +401,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+    <script src="js/resume.js"></script>
 
   </body>
 
