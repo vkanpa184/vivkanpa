@@ -37,7 +37,7 @@ $(window).on("load",function() {
 
       /* If the element is completely within bounds of the window, fade it in */
       if (objectBottom < windowBottom + 0.05*objectBottom) { //object comes into view (scrolling down)
-        if ($(this).css("opacity")==0) {$(this).fadeTo(250,1);}
+        if ($(this).css("opacity")==0) {$(this).fadeTo(200,1);}
       } else { //object goes out of view (scrolling up)
         if ($(this).css("opacity")==1) {$(this).fadeTo(50,0);}
       }
@@ -58,3 +58,15 @@ $(window).scroll(function() {
   });
 
 });
+
+/* document.addEventListener("scroll", function() {
+  const arrow = document.querySelector('.arrow-down');
+  const scrollPosition = window.scrollY;
+  const windowHeight = window.innerHeight;
+
+  // Calculate opacity based on scroll position (adjust the factor as needed)
+  const opacity = Math.max(1 - (scrollPosition / (windowHeight / 2)), 0);
+
+  arrow.style.opacity = opacity;
+});
+ */
