@@ -202,7 +202,8 @@ a {
 #opaque-shift {
   position: relative;
   -webkit-animation: shift 2s normal ease-out;
-  animation: shift 2s normal ease-out
+  animation: shift 2s normal ease-out;
+  
 }
 
 @-webkit-keyframes shift {
@@ -252,12 +253,40 @@ a {
   left: 900px;
 }
 
+.popgenomics {
+  position: relative;
+  width: 400px;
+  height: 0px;
+  z-index: 1;
+  left: 400px;
+}
+
 .ml {
   position: relative;
   width: 400px;
   height: 0px;
   z-index: 1;
   left: 750px;
+}
+
+.nice-to-meet-you {
+  position: relative;
+  width: 400px;
+  height: 0px;
+  z-index: 1;
+  left: 525px;
+}
+
+
+.arrow-down {
+  position: absolute;
+  top: 55vh;
+  bottom: 20px; 
+  left: 135%;
+  transform: translateX(0%);
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  z-index: 10;
 }
 
 .imageTwo {
